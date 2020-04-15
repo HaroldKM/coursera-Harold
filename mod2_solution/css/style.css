@@ -11,9 +11,6 @@ body{
 header{
     text-align: center;
     font-weight: bold;
-    position: relative;
-    bottom: 20px;
-    margin-top: 15px;
 }
 
 .colorgreen{
@@ -70,7 +67,7 @@ section{
 div.container{
  padding: 15px;
  position: relative;
- top: 70px;
+ top: 40px;
     
 }
 
