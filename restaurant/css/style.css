@@ -1,0 +1,123 @@
+body{
+    font-size: 16px;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #61122f;  
+}
+
+/**Header**/
+
+#header-nav{
+    background-color: #f6b319;
+    border: 0;
+    border-radius: 0;   
+}
+
+#logo-img{
+   background-image: url("/images/vintagelogo.png");
+   border-radius: 50%;
+   height: 120px;
+   width: 120px;
+   margin: 10px 10px 10px 0px;
+}
+
+.navbar-brand{
+    padding: 20px;    
+}
+
+/**Restaurant name**/
+.navbar-brand h1{
+     color: #557c3e;
+     font-size: 1.5em;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-shadow: 1px 1px 1px #222;
+     margin-top: 0;
+     margin-bottom: 0;
+     line-height: 0.75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+.navbar-brand p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 20px;
+}
+
+.navbar-brand p span{
+    vertical-align: middle;
+}
+
+a.icon{
+    display: none;
+}
+
+div.topnav a{
+    float: right;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #557c3e;
+    text-align: center;
+}
+
+div.topnav a:hover{
+    color: #fff;
+}
+
+div.topnav i{
+    color: black;
+}
+
+div.topnav i:hover{
+    color: #557c3e;
+}
+
+/**For medium device screen**/
+@media screen and (max-width: 1023px){
+    /**hidden all the link exept the first one (the menu icon)**/
+    div.topnav a:not(:first-child){
+        display: none;
+    }
+
+    p.kosher.hide{
+        display: none;
+    }
+
+    div.topnav.responsive{
+        position: relative;
+    }
+
+    div.topnav.responsive a,i{
+        padding: 20px;
+        text-align: left;
+        display: block;
+        
+    }
+
+    div.bgColor:hover{
+        background-color: #557c3e;
+
+    }
+
+    a.icon{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: transparent;
+        color:#557c3e;
+        text-decoration: none;
+        padding: 15px 10px;    
+    }
+}
+
+@media screen and (max-width: 1023px){
+    h1.smalfont, i.smalfont{
+        font-size: 20px;
+    }
+}
+
