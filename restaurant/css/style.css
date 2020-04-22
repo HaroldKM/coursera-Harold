@@ -115,9 +115,9 @@ div.topnav i:hover{
     }
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 430px){
     h1.smalfont, i.smalfont{
-        font-size: 20px;
+        font-size: 5vw;
     }
 }
 
