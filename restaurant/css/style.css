@@ -76,7 +76,7 @@ div.topnav i:hover{
     color: #557c3e;
 }
 
-/**For medium device screen**/
+/**For large-medium device screen**/
 @media screen and (max-width: 1023px){
     /**hidden all the link exept the first one (the menu icon)**/
     div.topnav a:not(:first-child){
@@ -116,7 +116,24 @@ div.topnav i:hover{
     }
 }
 
+/**For medium device**/
+@media screen and (max-width:767px){
+    /*Heading name and yellow brand size*/
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    i.smalfont{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+}
+
+/**For small device**/
 @media screen and (max-width: 430px){
+    /*Heading name size and yellow-brand size*/
     h1.smalfont, i.smalfont{
         font-size: 5vw;
     }
