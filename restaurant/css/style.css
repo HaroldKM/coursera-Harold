@@ -92,7 +92,7 @@ div.topnav i:hover{
     }
 
     div.topnav.responsive a,i{
-        padding: 10px;
+        padding: 20px;
         text-align: left;
         display: block;
         
@@ -111,7 +111,8 @@ div.topnav i:hover{
         background-color: transparent;
         color:#557c3e;
         text-decoration: none;
-        padding: 15px 10px;    
+        margin: -5px 0px; 
+        padding: 0px;   
     }
 }
 
