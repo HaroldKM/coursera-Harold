@@ -120,5 +120,14 @@ div.topnav i:hover{
     h1.smalfont, i.smalfont{
         font-size: 5vw;
     }
+
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    i.smalfont{
+        padding-top: 0px;
+    }
 }
 
