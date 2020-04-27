@@ -78,9 +78,22 @@ div.topnav i:hover{
 }
 /**END HEADER**/
 
+/*jumbotron-xs padding*/
+.container div.jumbotron{
+    padding: 0px;
+    margin: 10px;
+}
+/*end jumbotron image*/
+
 /**For large device screen**/
 @media screen and (min-width: 1024px){
-    /**hidden all the link exept the first one (the menu icon)**/
+
+    /*jumbotron image*/
+    .container div.jumbotron{
+        background-image: url("/images/jumbotron_1200.jpg");
+        height: 675px;
+    }
+    /*end jumbotron image*/
     
 }
 
@@ -128,14 +141,14 @@ div.topnav i:hover{
     }
     /*-the hamburger icon styling-*/
 
+
     /*delivery button*/
     div.call-btn{
         background-color: #f6b319;
         text-align: center;
-        margin: 0px 15px;
-        border: 2px solid white;
-        border-radius: 3%;
-        
+        margin: 30px 30px;
+        border: 5px solid white;
+        border-radius: 20px;    
     }
 
     a.btn:hover, a.btn:focus{
@@ -146,6 +159,17 @@ div.topnav i:hover{
     a.btn{
         color: #61122f;
     }
+    /*-delivery button-*/
+
+    /* we deliver*/
+    div.deliver{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    /*-we deliver-*/
+
+    
 }
 
 /**For small device**/
@@ -161,6 +185,8 @@ div.topnav i:hover{
         padding-left: 0px;
     }
     /*end*/
+
+   
 
 }
 
@@ -181,8 +207,16 @@ div.topnav i:hover{
         padding-left: 0px;
     }
     /*end*/
-
-   
-
 }
 
+/*jumbotron setting*/
+@media (min-width: 767px) and (max-width: 1021px){
+
+    /*jumbotron image*/
+    .container div.jumbotron{
+        background-image: url("/images/jumbotron_992.jpg");
+        height: 558px;
+    }
+    /*end jumbotron image*/
+    
+}
