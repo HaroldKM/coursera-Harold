@@ -36,6 +36,7 @@ body{
      margin-bottom: 0;
      line-height: 0.75;
 }
+/*end*/
 
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
@@ -75,13 +76,21 @@ div.topnav i{
 div.topnav i:hover{
     color: #557c3e;
 }
+/**END HEADER**/
 
-/**For large-medium device screen**/
+/**For large device screen**/
+@media screen and (min-width: 1024px){
+    /**hidden all the link exept the first one (the menu icon)**/
+    
+}
+
+/**For medium device screen**/
 @media screen and (max-width: 1023px){
     /**hidden all the link exept the first one (the menu icon)**/
     div.topnav a:not(:first-child){
         display: none;
     }
+    /*-hidden links-*/
 
     p.kosher.hide{
         display: none;
@@ -91,18 +100,21 @@ div.topnav i:hover{
         position: relative;
     }
 
+    /**Styling the icon**/
     div.topnav.responsive a,i{
         padding: 20px;
         text-align: left;
         display: block;
         
     }
+    /*-styling the icon-*/
 
     div.bgColor:hover{
         background-color: #557c3e;
 
     }
 
+    /**the hamburger icon styling**/
     a.icon{
         display: block;
         position: absolute;
@@ -114,9 +126,29 @@ div.topnav i:hover{
         margin: -5px 0px; 
         padding: 0px;   
     }
+    /*-the hamburger icon styling-*/
+
+    /*delivery button*/
+    div.call-btn{
+        background-color: #f6b319;
+        text-align: center;
+        margin: 0px 15px;
+        border: 2px solid white;
+        border-radius: 3%;
+        
+    }
+
+    a.btn:hover, a.btn:focus{
+        text-decoration: none;
+        color: none;
+    }
+
+    a.btn{
+        color: #61122f;
+    }
 }
 
-/**For medium device**/
+/**For small device**/
 @media screen and (max-width:767px){
     /*Heading name and yellow brand size*/
     .navbar-brand{
@@ -128,10 +160,11 @@ div.topnav i:hover{
         padding-top: 0px;
         padding-left: 0px;
     }
+    /*end*/
 
 }
 
-/**For small device**/
+/**For xsmall device**/
 @media screen and (max-width: 430px){
     /*Heading name size and yellow-brand size*/
     h1.smalfont, i.smalfont{
@@ -147,5 +180,9 @@ div.topnav i:hover{
         padding-top: 0px;
         padding-left: 0px;
     }
+    /*end*/
+
+   
+
 }
 
