@@ -19,7 +19,7 @@ div.menu{
 
 footer div.center{
   text-align: center;
-  margin-top: 600px;
+  margin-top: auto;
   color: #b8860b;
   font-weight: bold;
   
@@ -231,6 +231,10 @@ div.container{
     }
     .col-sm-12 {
       width: 100%;
+    }
+
+    footer div.center{
+      margin-top: 600px;     
     }
   }
   
