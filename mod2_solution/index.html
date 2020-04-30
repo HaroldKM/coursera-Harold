@@ -8,14 +8,41 @@
     </head>
 
     <body>
+        <!--********************************HEADER********************************-->
+        <header>
+            <div class="nav ">
+                <div class="container">
+                    <div class="bold"> FOOD,LCC </div>
+                    <div class="icon visible-sm" onclick="myFunction()">  
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="hide" id="menu">
+                        <a href="#Green"><div>Green</div></a>
+                        <a href="#Yellow"><div>Yellow</div></a>
+                        <a href="#Red"><div>Red</div></a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </header>
+
+        
+        <!--*****************************END OF HEADER*****************************-->
+       
+        
+        
         <div class="container">
-            <header>
+            <div class="menu">
                 OUR MENU 
-            </header>
+            </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <section>
-                        <div class="title colorgreen">Green</div>
+                        <div class="title colorgreen" id="Green">Green</div>
                             Lorem ipsum dolor sit amet 
                             consectetur adipisicing elit. Laboriosam, impedit! Earum odit minima 
                             tenetur hic assumenda molestias modi provident doloribus iusto eos quas minus 
@@ -27,7 +54,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <section>
-                        <div class="title coloryellow">Yellow</div>
+                        <div class="title coloryellow" id="Yellow">Yellow</div>
                             Lorem ipsum dolor sit amet 
                             consectetur adipisicing elit. Laboriosam, impedit! Earum odit minima 
                             tenetur hic assumenda molestias modi provident doloribus iusto eos quas minus 
@@ -42,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <section id="s3">
-                        <div class="title colorred">Red</div>
+                        <div class="title colorred" id="Red">Red</div>
                             Lorem ipsum dolor sit amet 
                             consectetur adipisicing elit. Laboriosam, impedit! Earum odit minima 
                             tenetur hic assumenda molestias modi provident doloribus iusto eos quas minus 
@@ -54,8 +81,22 @@
             
         </div>
         
+        
+        <footer>
+            <div class="center">&copy; Copyright 2020 </div>
+        </footer>
+        
 
-         
+         <script>
+             function myFunction(){
+                 var x = document.getElementById("menu");
+                 if (x.className === "hide") {
+                     x.className +=  " visible-sm";
+                }else{
+                    x.className = "hide";
+                }
+             }
+         </script>
     </body>
   
 </html>

@@ -3,32 +3,45 @@
 }
 
 body{
+  
     margin: 0;
     padding: 0;
+    background-color: #444;
 }
 
 
-header{
+div.menu{
     text-align: center;
     font-weight: bold;
+    margin-top: 40px;
+    color: #b8860b;
+}
+
+footer div.center{
+  text-align: center;
+  margin-top: 600px;
+  color: #b8860b;
+  font-weight: bold;
+  
+  
 }
 
 .colorgreen{
   font-weight: bold;
-  color: white;
-  background-color: green;
+  color: #fff;
+  background-color: #013220;
 }
 
 .coloryellow{
   font-weight: bold;
   color: rgb(0, 0, 0);
-  background-color: yellow;
+  background-color: #B8860B;
 }
 
 .colorred{
   font-weight: bold;
   color: white;
-  background-color: red;
+  background-color: rgba(148, 3, 3, 0.657);
 }
 
 
@@ -49,12 +62,14 @@ div.title{
 section{
   border: 1px solid black;
   position: relative;
-  top: 50px;
   margin: 5px; 
   padding: 10px;
   padding-top: 35px;
   margin-bottom: 20px;
-  background-color: rgb(253, 252, 252);
+  margin-top: 30px;
+  background-color: #222;
+  color: #b8860b;
+  box-shadow: 0px 0px 5px 5px #222;
     
 }
 
@@ -67,8 +82,11 @@ section{
 div.container{
  padding: 15px;
  position: relative;
- top: 40px;
     
+}
+
+.hide{
+  display: none;
 }
 
 /********** Large devices only **********/
@@ -76,6 +94,10 @@ div.container{
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
       
+    }
+
+    .visible-sm{
+      display: none;
     }
 
     .col-lg-1 {
@@ -122,9 +144,10 @@ div.container{
       float: left;
       
     }
-
-    
-
+    .visible-sm{
+      display: none;
+    }
+ 
     .col-md-1 {
       width: 8.33%;
     }
@@ -168,6 +191,9 @@ div.container{
       float: left;     
     }
 
+    .visible-sm{
+      display: block;
+    }
    
 
     .col-sm-1 {
@@ -207,4 +233,63 @@ div.container{
       width: 100%;
     }
   }
+  
+  /***********************************header***********************************/
+  div.nav{
+    width: 100%;
+    background-color: #222;
+    box-shadow: 0px 0px 5px 3px #333;
+    position: relative;
+  }
+
+  div.nav > div{
+    color: darkgoldenrod;
+    font-size: 1.3em;
+  }
+
+  div.icon{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    margin-right: 10px ;
+  }
+
+  div.icon:hover{
+    box-shadow: 0px 0px 5px 2px #b8860b;
+  }
+
+  div.icon hr{
+    margin: 5px 0;
+    height: 4px;
+    border: 0;
+    background-color: #b8860b;
+  }
+
+ 
+
+  div#menu a{
+    color: #b8860b;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px 0px;
+    
+  }
+  a > div{
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.bold {
+    font-weight: bold;
+  }
+
   
