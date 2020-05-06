@@ -87,6 +87,7 @@ div.container{
 }
 
 .hide{
+
   display: none;
 }
 
@@ -193,6 +194,7 @@ div.container{
     }
 
     .visible-sm{
+      transition: display 2s;
       display: block;
     }
    
@@ -275,6 +277,7 @@ div.container{
     background-color: #b8860b;
   }
 
+  
  
 
   div#menu a{
